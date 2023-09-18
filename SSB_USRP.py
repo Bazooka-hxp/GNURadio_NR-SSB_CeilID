@@ -111,7 +111,7 @@ class SSB_USRP(gr.top_block, Qt.QWidget):
             uhd.stream_args(
                 cpu_format="fc32",
                 args='',
-                channels=list(range(0,1)),
+                channels=[0],
             ),
         )
         self.uhd_usrp_source_0.set_center_freq(4.9e9, 0)
@@ -124,7 +124,7 @@ class SSB_USRP(gr.top_block, Qt.QWidget):
             uhd.stream_args(
                 cpu_format="fc32",
                 args='',
-                channels=list(range(0,1)),
+                channels=[1],
             ),
             '',
         )
